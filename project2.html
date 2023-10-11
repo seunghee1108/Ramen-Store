@@ -6,34 +6,90 @@
   <title>Document</title>
   <style>
     *{
-      
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #root > div {
+      width: 80vw;
+      height: 20vh;
+      background-color:aliceblue;
+      margin: 1vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+    #root > :nth-child(1) > div {
+      width: 15vw;
+      height: 18vh;
+      background-color: aquamarine;
+      margin: 1vw;
+      border-radius: 20%;
+      display: flex;
+    }
+    #root > :nth-child(1) > div > :nth-child(1){
+      background-image: url(./image/계란.jpeg);
+      width: 15vw;
+      height: 18vh;
+      display: flex;
+    }
+
+    #root > :nth-child(2) > div {
+      width: 15vw;
+      height: 18vh;
+      background-color: aquamarine;
+      margin: 1vw;
+      border-radius: 20%;
+    }
+    #root > :nth-child(3) > div {
+      width: 15vw;
+      height: 18vh;
+      background-color: aquamarine;
+      border-radius: 20%;
+      margin: 1vw;
+    }
+    #root > :nth-child(4) > div {
+      width: 15vw;
+      height: 18vh;
+      background-color: aquamarine;
+      border-radius: 20%;
+      margin: 1vw;
     }
   </style>
 </head>
 <body>
   <div id = "root">
-    <!-- 얼굴 이모티콘 -->
+    <!-- 1 -->
     <div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
-    <!-- 상의 이모티콘 -->
+    <!-- 2 -->
     <div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
-    <!-- 하의 이모티콘 -->
+    <!-- 3 -->
     <div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
-    <!-- 신발 이모티콘 -->
+    <!-- 4 -->
     <div>
       <div></div>
       <div></div>
@@ -43,7 +99,12 @@
   </div>
 
   <script>
-
+    const root = document.getElementById("root")
+    console.dir(root)
+    const boxOne = document.getElementById("boxone")
+    const boxTwo = document.getElementById("boxTwo")
+    const
+    
   </script>
 </body>
 </html>
