@@ -24,7 +24,6 @@
       display: flex;
       flex-wrap: wrap; 
     }
-    
     #root > div > div {
       width: 17vw;
       height: 20vh;
@@ -33,7 +32,6 @@
       background-repeat: no-repeat;
       background-position: center;
     }
-  
     #root > div > :nth-child(1) {
       background-image: url(./image/라면.jpeg);
     }
@@ -70,7 +68,6 @@
     #root > div > :nth-child(12) {
       background-image: url(./image/계란.jpeg);
     }
-
   
   </style>
 </head>
@@ -90,51 +87,20 @@
       <div></div>
       <div></div>
     </div>
+    <div></div>
   </div>
   <script>
     const root = document.getElementById("root")
     console.dir(root)
-
-    const boxOne = document.getElementById("boxOne");
-    root.addEventListener('click', function (){
-      // boxOne.style.width = "17vw"
-      // boxOne.style.height= "20vh"
-      // boxOne.style.position = "absolute"
-      boxOne.style.backgroundColor = "red"
-      boxOne.style.display = "flex"
-    });
-
-    // const boxTwo = document.getElementById("boxTwo")
-    // const boxThree = document.getElementById("boxThree")
-    // const boxFour = document.getElementById("boxFour")
-    // const boxFive = document.getElementById("boxFive")
-    // const boxSix = document.getElementById("boxSix")
-    // const boxSeven = document.getElementById("boxSeven")
-    // const boxEight = document.getElementById("boxEight")
-    // const boxNine = document.getElementById("boxNine")
-    // const boxTen = document.getElementById("boxTen")
-    // const boxEleven = document.getElementById("boxEleven")
-    // const boxTwelve = document.getElementById("boxTwelve")
-    
-    // boxOne = root.createElement("button")
-    // root.children[0].appendChild(boxOne)
-    // boxOne.style.backgroundColor = "grey"
-    // boxOne.style.position = "relative"
-    // boxOne.style.width = "17vw"
-    // boxOne.style.height = "20vh"
-    // boxOne.style.display = "flex"
-    
-;
-
-    // root.addEventListener('click', () => {
-    //   root.children[0].children[0].backgroundColor = "white";
-    //   root.children[0].children[0].display = "flex";
-
-      
-    // });
-  </script>
+    const box = root.children[0].children
+    for(let i = 0; i < box.length; i++) {
+      box[i].addEventListener('click',function(){
+        box[i].style.backgroundColor = "yellow";
+      })
+      console.log(box[i])
+     };
+    </script>
 </html>
 </body>
-
 
 <!-- button 만들기, 각 각 클릭이벤트 주기, 끓이는 중입니다 화면 뜨게 하기(보글보글 움짤), 완성짤 나타나기 -->
