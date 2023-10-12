@@ -87,7 +87,7 @@
       <div></div>
       <div></div>
     </div>
-    <div></div>
+    <input type="button" id="button" value="끓여주세요!">
   </div>
   <script>
     const root = document.getElementById("root")
@@ -99,6 +99,22 @@
       })
       console.log(box[i])
      };
+
+     const button = document.getElementById("button")
+     console.log(button);
+
+     button.addEventListener('click', function(){
+      complete = document.createElement("div")
+      root.appendChild(complete)
+      complete.style.width = "100vw"
+      complete.style.height = "100vh"
+      complete.style.backgroundFilter = "blur(3px)"
+      complete.style.position = "absolute"
+      complete.style.display = "flex"
+      complete.style.backgroundImage = "url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F24403E40594256D733)"
+     })
+     complete.style.backgroundRepeat = "no-repeat"
+     
     </script>
 </html>
 </body>
