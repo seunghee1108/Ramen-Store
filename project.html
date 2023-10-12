@@ -116,23 +116,14 @@
       complete.style.position = "absolute"
       complete.style.display = "flex"
       complete.style.backgroundImage = "url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F24403E40594256D733)"
-     })
-      complete.style.backgroundRepeat = "no-repeat"
-
-
-      const tast = document.createElement("div")
-      root.appendChild(tast)
-      tast.style.width = "100vw"
-      tast.style.height = "100vh"
-      tast.style.backgroundColor = "skyblue"
-      tast.style.position = "absolute"
-
-     setTimeout(function(){
-      console.log(tast);
-     },1000);
-     
+      
+      setTimeout(function() {
+      complete.style.backgroundImage = "url(./image/맛이.png)"
+      complete.style.backgreoundRepeat = "no-repeat"
+     }, 1000)
+    });
     </script>
 </html>
 </body>
 
-<!-- button 만들기, 각 각 클릭이벤트 주기, 끓이는 중입니다 화면 뜨게 하기(보글보글 움짤), 완성짤 나타나기 -->
+<!-- button 만들기, 각 각 클릭이벤트 주기, 끓이는 중입니다 화면 뜨게 하기, 완성짤 나타나기 -->
